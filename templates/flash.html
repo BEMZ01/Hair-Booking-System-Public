@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>{{ business_name }} System Message!</title>
+        <script>
+            window.setInterval('cmd()', 5000);
+            // Call a function every 10000 milliseconds
+            // (OR 10 seconds).
+
+            // Refresh or reload page.
+            function cmd() {
+                {% if (cmd == "back") or (cmd == None) %}
+                    history.back();
+                {% else %}
+                    {{ cmd }}
+                {% endif %}
+            }
+</script>
+    </head>
+    <body>
+    {% if message %}
+        <p class="error"><strong>Message from System: </strong> {{ message }}
+    {% endif %}
+     <br><br>
+        <i>You will be redirected in 5 seconds.</i>
+    </body>
+</html>

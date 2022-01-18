@@ -1,0 +1,51 @@
+.objects img {
+  z-index: 90;
+  pointer-events: none;
+}
+
+.object_moon {
+  position: absolute;
+  top: 12%;
+  left: 25%;
+}
+
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+audio, canvas, img, video {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+img {
+  border-style: none;
+}
+
+img {
+  border-radius: 5px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /*box-sizing: border-box;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*left: 0;*/
+  /*top: 0;*/
+  background: rgb(08,08,08);
+  /*z-index: 10;*/
+}
+

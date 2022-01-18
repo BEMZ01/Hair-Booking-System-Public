@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "repl_python3_ALevel-Hair"
+version = "0.1.0"
+description = ""
+authors = ["BEMZ <<>>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "^2.0.0"
+werkzeug = "^2.0.1"
+PyYAML = "^5.4.1"
+requests = "^2.25.1"
+python-dotenv = "^0.17.1"
+google-api-python-client = "^2.10.0"
+google-auth-oauthlib = "^0.4.4"
+PyQRCode = "^1.2.1"
+Flask-Toastr = "^0.5.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

@@ -1,0 +1,11 @@
+pyYAML~=5.4.1
+Flask~=2.0.0
+Werkzeug~=2.0.0
+requests~=2.25.1
+python-dateutil~=2.8.1
+google~=3.0.0
+PyQRCode~=1.2.1
+Flask-Toastr
+python-dateutil
+google-api-python-client
+google-auth-oauthlib
