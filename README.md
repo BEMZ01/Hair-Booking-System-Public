@@ -21,7 +21,7 @@ Built with ❤️ in [Flask](https://github.com/pallets/flask) and [Python 3](ht
 Want to deploy this yourself?
 For now just run through replit.com
 
-![Run on Repl.it](https://repl.it/badge/github/BEMZ01/ALevel-Hair)(https://repl.it/github/BEMZ01/Hair-Booking-System-Public)]
+[![Run on Repl.it](https://repl.it/badge/github/BEMZ01/ALevel-Hair)](https://repl.it/github/BEMZ01/Hair-Booking-System-Public)
 
 <h1>Set-up (ez)</h1>
 1. Clone the code<br>
