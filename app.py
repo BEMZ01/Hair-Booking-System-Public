@@ -46,7 +46,7 @@ toastr.init_app(app)
 # this log is needed for a cookie policy. (Because i will 100% forget what names I have used)
 
 
-def render_text(text):  # replace place holder text with actual data
+def render_text(text):  # replace placeholder text with actual data
     name = request.cookies.get('uID')
     business = CONFIG["business name"]
     dat = time.strftime(r"%d/%m/%Y", time.localtime())
@@ -273,7 +273,7 @@ password-security:
   salt: """ + str(os.urandom(128)) + """
   # the salt to apply to passwords.
   hash-iterations: 100000 
-  # how many iterations of the sha-256 algorithm to use. Recomened = 100000 
+  # how many iterations of the sha-256 algorithm to use. Recommended = 100000 
   key-size: 128
   # length of key to return from hashing algorithm.
   
@@ -954,7 +954,7 @@ def calendar():
 
 
 @app.errorhandler(404)
-def error_404(e):  # oh no
+def error_404(e):  # oh, no
     if request.cookies.get('uID'):
         return render_template("404.html", business_name=BUSINESS, user=request.cookies.get('uID'),
                                current_user=str(request.cookies.get('uID'))), 404
@@ -977,8 +977,9 @@ if __name__ == '__main__':  # on start-up
             "https://console.developers.google.com/ for more info.")
         url = pyqrcode.create('https://console.developers.google.com/')
         print(url.terminal(quiet_zone=1))
-        open("setup", "w+")
-        input("Press enter to continue.\n")
+        open("setup", "w").close()
+        input("Press enter to continue.")
+        raise Exception("credentials.json is not found or invalid.\nPlease see the above website for more info.")
     print("Welcome! The Current Working Directory is " + CWD)
     print("Check for updates...")
     if update():
@@ -996,7 +997,7 @@ if __name__ == '__main__':  # on start-up
         input("Press ENTER to continue.\n> ")  # config file was not found, shows a message to the console.
     else:
         pass
-    CONFIG = load_yaml("config.yml")  # load global varibles
+    CONFIG = load_yaml("config.yml")  # load global variables
     SSALT = bytes(CONFIG["password-security"]["salt"], "utf-8")
     BUSINESS = CONFIG["business name"]
     print("Ready!\n\nStarting Flask")
